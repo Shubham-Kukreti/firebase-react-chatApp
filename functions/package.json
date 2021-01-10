@@ -7,10 +7,10 @@
     "serve": "firebase emulators:start --only functions",
     "shell": "firebase functions:shell",
     "start": "npm run shell",
+    "deploy":"gh-pages -d build",
     "deploy-firebase": "firebase deploy --only functions",
     "logs": "firebase functions:log",
     "predeploy":"npm run build",
-    "deploy":"gh-pages -d build"
   },
   "engines": {
     "node": "12"
