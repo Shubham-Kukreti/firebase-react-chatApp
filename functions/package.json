@@ -1,13 +1,16 @@
 {
   "name": "functions",
+  "homepage": "http://Shubham-Kukreti.github.io/firebase-react-chatApp",
   "description": "Cloud Functions for Firebase",
   "scripts": {
     "lint": "eslint .",
     "serve": "firebase emulators:start --only functions",
     "shell": "firebase functions:shell",
     "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
+    "deploy-firebase": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build"
   },
   "engines": {
     "node": "12"
